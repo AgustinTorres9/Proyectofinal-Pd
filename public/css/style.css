@@ -118,6 +118,29 @@ a{
     margin: 10px;
 }
 
+.productBody{
+    background-color: rgb(228, 228, 228);
+}
+
+.product{
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    
+}
+
+.productImg{
+    
+}
+
+.productInfo{
+    flex-direction: column;
+    margin: 5px;
+}
+
 footer{
     padding: 20px;
     text-align: center;
@@ -135,9 +158,42 @@ footer{
 
 .descSection{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin-left: 20%;
     margin-right: 20%;
+    flex-direction: column;
+}
+
+.descArticle p{
+    font-size: 2.125em;
+    line-height: 1.2;
+}
+
+.descArticleImg{
+    margin-top: 5%;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.descArticleImgGrid{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.descArticleImgGrid img{
+    width: 48%;
+    height: 50%;
+    margin-top: 2%;
+    border-radius: 5px;
+}
+
+.video{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    border: 5px;
 }
 
 .myContact{
@@ -155,6 +211,13 @@ footer{
 @media (max-width:992px) {
     .ml-logo img{
         width: 100%;
+    }
+    .productImg{
+        width: 50%;
+        height: 50%;
+    }
+    .productInfo{
+        width: 50%;
     }
 }
 
@@ -177,6 +240,7 @@ footer{
         margin-left: 5px;
         min-width: 168px;
     }
+    
 }
 
 @media (min-width:576px) {
